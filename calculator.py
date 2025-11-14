@@ -23,3 +23,4 @@ def logarithm(a, b): # base, x
 
 def exponent(a, b):
     return a**b
+
