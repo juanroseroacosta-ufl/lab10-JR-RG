@@ -1,3 +1,7 @@
+# https://github.com/juanroseroacosta-ufl/lab10-JR-RG
+# Partner 1: Juan Rosero Acosta
+# Partner 2: Rohan Grewal
+
 import math
 
 def square_root(a):
