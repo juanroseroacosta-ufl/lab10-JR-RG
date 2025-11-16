@@ -1,6 +1,6 @@
 import unittest
 import math
-from calculator import add, sub, mul, div, log, exp
+from calculator import add, subtract, mul, div, logarithm, exp
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
@@ -10,9 +10,9 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(add(-1, -1),-2)
 
     def test_subtract(self): # 3 assertions
-        self.assertEqual(sub(10, 5), 5)
-        self.assertEqual(sub(-1, 1), -2)
-        self.assertEqual(sub(-1, -1), 0)
+        self.assertEqual(subtract(10, 5), 5)
+        self.assertEqual(subtract(-1, 1), -2)
+        self.assertEqual(subtract(-1, -1), 0)
 
     ######## Partner 1
     # def test_multiply(self): # 3 assertions
@@ -28,17 +28,17 @@ class TestCalculator(unittest.TestCase):
             div(0, 10)
 
     def test_logarithm(self): # 3 assertions
-        self.assertAlmostEqual(log(10, 100), 2.0)
-        self.assertAlmostEqual(log(2, 8), 3.0)
-        self.assertAlmostEqual(log(math.e, math.e ** 3), 3.0)
+        self.assertAlmostEqual(logarithm(10, 100), 2.0)
+        self.assertAlmostEqual(logarithm(2, 8), 3.0)
+        self.assertAlmostEqual(logarithm(math.e, math.e ** 3), 3.0)
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            log(0, 10)
+            logarithm(0, 10)
         with self.assertRaises(ValueError):
-            log(10, -5)
+            logarithm(10, -5)
         with self.assertRaises(ValueError):
-            log(10, 1)
+            logarithm(10, 1)
     
     ######## Partner 1
     # def test_log_invalid_argument(self): # 1 assertion
