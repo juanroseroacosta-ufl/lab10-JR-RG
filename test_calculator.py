@@ -4,7 +4,7 @@
 
 import unittest
 import math
-from calculator import add, subtract, mul, div, logarithm, exp
+from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
